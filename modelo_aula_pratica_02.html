@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia Digital de Ciências</title>
+
+ <!-- API- Animação de Partículas -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+ 
+<!-- CSS- Links GitHub -->
+<link rel="stylesheet" href="https://ibmxu.github.io/guia/base.css">
+<link rel="stylesheet" href="https://ibmxu.github.io/guia/pages.css">
+<link rel="stylesheet" href="https://ibmxu.github.io/guia/components.css">
+<link rel="stylesheet" href="https://ibmxu.github.io/guia/TextoExtenso.css">
+<link rel="stylesheet" href="https://ibmxu.github.io/guia/navigation.css">
+<link rel="stylesheet" href="https://ibmxu.github.io/guia/summary.css">
+<link rel="stylesheet" href="https://ibmxu.github.io/guia/responsive.css">    
+<link rel="stylesheet" href="https://ibmxu.github.io/guia/stylevideo.css">
+
+</head>
+
+<body>
+
+<!-- barra de progresso-->
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- a container organiza todas as paginas-->
+<div class="container">
+
+<!-- a primeira pagina deve ser uma pagina ativa-->
+ <div class="page active">
+ 
+  <div class="page-header">
+  <div id="animacao-biologica"></div>
+    <div class="page-header-content">
+    <h1>Guia interativo de Ciências</h1>
+    <p>6º ano do ensino fundamental</p>
+   </div>
+  </div>
+  
+  <div class="cover-page">
+  <div class="text-box">   
+  <h3>Bem-vindo ao seu guia de estudos!</h3>     
+  <p>Este guia interativo foi desenvolvido para tornar o aprendizado de ciências mais dinâmico 
+  e interessante. Explore os conceitos através de textos, imagens
+  e animações, agora continue ou
+  use o sumário </p>
+  </div>
+  </div>
+  
+ </div>
+</div>
+
+
+<!-- botoes de navegacao-->
+ <div class="navigation">
+    <button class="nav-btn" id="prevBtn" onclick="changePage(-1)">← Anterior</button>
+    <button class="home-btn" onclick="goToHome()" title="Ir para o início"></button>
+    <button class="nav-btn" id="nextBtn" onclick="changePage(1)">Próxima →</button>
+</div>
+
+
+<!-- Scripts-->
+<script src="https://ibmxu.github.io/guia/animacaoTopo.js"></script>
+<script src="https://ibmxu.github.io/guia/animacaoInicial.js"></script>
+<script src="https://ibmxu.github.io/guia/sumario.js"></script>
+<script src="https://ibmxu.github.io/guia/jsteste/navegaID.js"></script>
+<script src="https://ibmxu.github.io/guia/scriptvideo.js"></script>
+</body>
+</html>
